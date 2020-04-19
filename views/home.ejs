@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <!-- <link rel="stylesheet" href="style/debug.css"> -->
+    <link rel="stylesheet" href="style/helpers.css">
+
+    <title>Home</title>
+    <style>
+  .hero {
+      background: black url(images/hero-bg.jpg) center / cover;
+  }  
+  
+  .center, .center-column, .top, .right, .buttom, .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-column {
+    flex-direction: column;
+}
+
+.top    {align-items:     flex-start;}
+.top    {justify-content: flex-end;  }
+.top    {align-items:     flex-end;  }
+.top    {justify-content: flex-start;}
+
+.single-spaced, .single-spaced * {
+    line-height: 1;
+}
+
+@media (max-width: 1024px) {
+    .desktop {
+        display: none;
+    }
+}
+
+ul {
+      position: absolute;
+      top: 71%;
+      margin-left: 75%;
+    }
+
+ul li {
+
+display: inline-block;
+}
+
+.buttom{
+    justify-content: right;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+    </style>
+</head>
+<body>
+    <section class="hero is-fullheight">
+      <div class="hero-head">
+          <div class="columns is-mobile is-marginless heading has-text-weight-bold ">
+              <div class="column left">
+                <div class="navbar-brand navbar-start" style="padding-left: 10px;">
+                 <a href="/" class="navbar-item has-text-white" style="font-size: large; 
+                 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">EASYSOFT</a>
+              </div>
+              </div>
+              <div class="navbar-brand navbar-center" style="margin-right: 300px;">
+              <div id="navMenu" class="navbar-menu center-column">
+              <div class="column center desktop">
+                  <a href="/" class="navbar-item is-capitalized" style="font-size: large; color: #1a1147;">Home</a>
+                  <!-- <p class="navbar-item has-text-white" style="font-size: large;">HOME</p> -->
+                  <a href="/employees" class="navbar-item is-capitalized has-text-white" style="font-size: large;">Crew</a>
+                  <a href="/todolist" class="navbar-item is-capitalized has-text-white" style="font-size: large;">Todo</a>
+                  <a href="#" class="navbar-item is-capitalized has-text-white" style="font-size: large;">Contact</a>
+            </div>
+        </div>
+              </div>
+
+        <div class="navbar-end is-primary">
+            <div class="navbar-brand navbar-start">
+            <div class="column right desktop">
+                <a href="#" class="navbar-item is-capitalized desktop has-text-white" style="font-size: large;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Sign Up</a>
+                <a href="#" class="navbar-item is-capitalized has-text-white desktop" 
+                style="font-size: large; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                    Sign In</a>
+               </div> 
+               <span class="navbar-burger burger has-text-white" data-target="navMenu" style="top: 12px;">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+               </div>
+                
+<!--                 
+                <div class="navbar-item has-text-white center">
+                    <i class="fas fa-bars"></i>
+                </div>
+                  -->
+            </div>
+          </div>
+          <script type="text/javascript">
+            (()=>{
+               var burger = document.querySelector('.burger');
+               var nav = document.querySelector('#'+burger.dataset.target);
+        
+               burger.addEventListener('click', ()=>{
+                   burger.classList.toggle('is-active');
+                   nav.classList.toggle('is-active');
+               });
+            })();
+            </script>
+      </div>
+
+      <header class="hero-body">
+          <div class="is-overlay has-text-right" style="top: 37%; margin-right: 110px;">
+              <h1 class="title is-1 has-text-white">Seaking to change the <br> world</h1>
+              <h2 class="subtitle is-6 has-text-grey-light" style="padding-top: 5px; font-family: 'Trebuchet MS',
+               'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                Soon there will be 2 kinds of people. <br> Those who use computers,
+                and those who use Easysoft. <br> We pride ourselve with bringing you <br> 
+                the best apps the world has ever seen.</h2>
+          </div>
+          <div>
+          <ul >
+            <li><a href="/employees" class="button is-primary is-outlined is-small">Meet the Team</a></li>
+            <li><a href="/" class="button is-primary is-small">Our Products</a></li>
+          </ul>
+      </div>
+      </header>
+
+    </section>
+</body>
+</html>
